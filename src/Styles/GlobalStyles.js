@@ -7,6 +7,7 @@ export const GlobalStyled = createGlobalStyle`
         font-family: "Playfair Display", serif;
         font-weight: 600;
         margin: 0;
+        padding: 0;
         background: -webkit-gradient(320deg, 0% 0%, 0% 100%, from(#daded4), to(#a3bcb6));
         background: -webkit-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
         background: -ms-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);

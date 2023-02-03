@@ -10,13 +10,13 @@ export const NavData = [
     icon: <AiIcons.AiFillHome />,
   },
   {
-    title: "Support",
-    path: "/support",
+    title: "Portfolio",
+    path: "/portfolio",
     icon: <IoIcons.IoMdHelpCircle />,
   },
   {
-    title: "About",
-    path: "/about",
+    title: "About Me",
+    path: "/aboutme",
     icon: <IoIcons.IoMdHelpCircle />,
   },
 ];
