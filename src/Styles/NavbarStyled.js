@@ -9,6 +9,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: center;
   padding-bottom: 0px;
+  margin-bottom: 40px;
 
   ul {
     display: flex;
@@ -84,7 +85,7 @@ export const SidebarNavLink = styled(Link)`
 
   &:hover {
     background-color: #000;
-    color: #fff;
+    color: #daded4;
   }
 `;
 
@@ -96,8 +97,8 @@ export const SidebarContainer = styled.nav`
   left: ${({ variant }) => (variant ? "-100%" : "0")};
   top: 0;
   position: fixed;
-  background-color: #283747;
-  border: 2px solid #283747;
+  background-color: #268348;
+  border: 2px solid #268348;
   border-radius: 10px;
   transition: 850ms;
 
