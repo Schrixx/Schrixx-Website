@@ -4,7 +4,7 @@ import { GlobalStyled } from "./Styles/GlobalStyles";
 
 import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
-import About from "./Pages/About";
+import AboutMe from "./Pages/AboutMe";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutMe />} />
       </Routes>
     </>
   );
