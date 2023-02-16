@@ -7,10 +7,10 @@ import { IconContext } from "react-icons";
 import {
   Bars,
   Close,
-  NavContainer,
+  NavWrapper,
   SidebarNavLink,
   NavbarNavLink,
-  SidebarContainer,
+  SidebarWrapper,
   BarsBackground,
 } from "../Styles/NavbarStyled";
 
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <NavContainer>
+      <NavWrapper>
         <BarsBackground>
           <Bars onClick={manageSidebar} />
         </BarsBackground>
@@ -36,9 +36,9 @@ export default function Navbar() {
             );
           })}
         </ul>
-      </NavContainer>
+      </NavWrapper>
       <IconContext.Provider value={{ color: "undefined" }}>
-        <SidebarContainer variant={sidebar ? false : true}>
+        <SidebarWrapper variant={sidebar ? false : true}>
           <Close onClick={manageSidebar} />
           <ul>
             {NavData.map((item, index) => {
@@ -52,7 +52,7 @@ export default function Navbar() {
               );
             })}
           </ul>
-        </SidebarContainer>
+        </SidebarWrapper>
       </IconContext.Provider>
     </>
   );

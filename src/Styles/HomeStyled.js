@@ -1,62 +1,70 @@
 import styled from "styled-components";
 
+import { GrLinkedin } from "react-icons/gr";
+
+import me from "../Images/Me/ryooo.jpg";
+
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  height: 40rem;
+  align-items: center;
+  margin-top: 6rem;
 `;
 
-export const GeneralContainer = styled.section`
+export const FrontEndContainer = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
-  align-items: center;
-  margin: 0;
-  margin-right: 8rem;
-  padding: 0;
-  height: 25rem;
-  width: 40rem;
-  background-color: #454545;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 26rem;
+  box-shadow: 10px 10px 10px #10232a;
 
   p {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    max-width: 25ch;
   }
 `;
 
-export const Line1 = styled.div`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 8rem;
-  height: 3px;
-  width: 40rem;
-  background-color: black;
-`;
-
-export const HobbiesContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-right: 8rem;
-  height: 25rem;
-  width: 40rem;
-  background-color: #986547;
-  border-radius: 10px;
-
-  p {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-`;
-
-export const FooterContainer = styled.section`
-  display: flex;
+export const MeImg = styled.div`
   position: absolute;
-  bottom: 0;
+  top: 3.38rem;
+  right: 6rem;
+  background-image: url(${me});
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30%;
+  box-shadow: 5px 10px 10px #10232a;
+  z-index: 5;
+`;
+
+export const SocialWrapper = styled.a`
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 17px;
+  position: absolute;
+  right: 2.6rem;
+  bottom: 1.5rem;
+  text-decoration: none;
+  transform: scale(2);
+`;
+
+export const LinkedInIcon = styled(GrLinkedin)`
+  color: #297187;
+`;
+
+export const Separator = styled.div`
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 0.4rem;
+  height: 1px;
+  opacity: 20%;
+  width: 55vw;
   background-color: black;
-  height: 10rem;
-  width: 100%;
 `;

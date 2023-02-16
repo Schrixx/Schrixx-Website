@@ -3,13 +3,29 @@ import React from "react";
 
 // components
 import Navbar from "../Components/Navbar";
+
+// styled components
 import {
+  FrontEndContainer,
+  MeImg,
   InfoContainer,
-  GeneralContainer,
-  HobbiesContainer,
-  Line1,
-  FooterContainer,
+  Separator,
+  LinkedInIcon,
+  SocialWrapper,
 } from "../Styles/HomeStyled";
+import { FooterContainer } from "../Styles/PortfolioStyled";
+import {
+  SkillsContainer,
+  HeaderWrapper,
+  IconContainer,
+  IconWrapper,
+  Tooltip,
+} from "../Styles/SkillsStyled";
+
+//Icons
+import ReactIcon from "../Images/Icons/ReactIcon";
+import StyledComponentsIcon from "../Images/Icons/StyledComponentsIcon";
+import JavascriptIcon from "../Images/Icons/JavascriptIcon";
 
 export default function Home() {
   return (
@@ -17,31 +33,53 @@ export default function Home() {
       <Navbar />
 
       <InfoContainer>
-        <GeneralContainer>
-          <h1>General</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            volutpat enim eget metus pellentesque consectetur et a felis. Donec
-            sollicitudin enim id imperdiet feugiat. Etiam a vehicula elit.
-            Praesent eros dolor, auctor et ultrices nec, hendrerit nec lacus.
-            Donec sollicitudin pulvinar dictum. Nulla facilisi. Vivamus quis
-            metus lobortis, varius felis et, ullamcorper orci. Maecenas blandit
-            massa interdum, pulvinar felis venenatis, volutpat ligula.
+        <FrontEndContainer>
+          <p style={{ fontSize: "20px", maxWidth: "46ch", color: "#1c1c1c" }}>
+            Hello, I'm Moses. Based in Tucson, Arizona 🌵.
           </p>
-        </GeneralContainer>
-        <Line1></Line1>
-        <HobbiesContainer>
-          <h1>Hobbies</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            volutpat enim eget metus pellentesque consectetur et a felis. Donec
-            sollicitudin enim id imperdiet feugiat. Etiam a vehicula elit.
-            Praesent eros dolor, auctor et ultrices nec, hendrerit nec lacus.
-            Donec sollicitudin pulvinar dictum. Nulla facilisi. Vivamus quis
-            metus lobortis, varius felis et, ullamcorper orci. Maecenas blandit
-            massa interdum, pulvinar felis venenatis, volutpat ligula.
+          <p style={{ fontSize: "36px", color: "#1c1c1c" }}>
+            As a{" "}
+            <span style={{ fontSize: "40px", color: "#71bbd1" }}>
+              Front-End Developer
+            </span>
+            {", "}I do my best to create responsive, user-friendly experiences
+            while maintaining a visually pleasing aesthetic.
           </p>
-        </HobbiesContainer>
+          <p style={{ marginBottom: "0", maxWidth: "56ch", color: "#1c1c1c" }}>
+            I'm always willing to take user criticism and feedback in order to
+            improve myself and my work.
+          </p>
+          <MeImg></MeImg>
+          <SocialWrapper
+            href="https://www.linkedin.com/in/moses-osuna-a7501b9a/"
+            target="_blank"
+          >
+            <LinkedInIcon />
+          </SocialWrapper>
+        </FrontEndContainer>
+        <Separator></Separator>
+        <SkillsContainer>
+          <HeaderWrapper>
+            <h1>My Toolkit</h1>
+          </HeaderWrapper>
+
+          <IconContainer>
+            <IconWrapper>
+              <Tooltip>Javascript</Tooltip>
+              <JavascriptIcon />
+            </IconWrapper>
+
+            <IconWrapper>
+              <Tooltip>ReactJS</Tooltip>
+              <ReactIcon />
+            </IconWrapper>
+
+            <IconWrapper style={{ marginRight: "0" }}>
+              <Tooltip>Styled Components</Tooltip>
+              <StyledComponentsIcon />
+            </IconWrapper>
+          </IconContainer>
+        </SkillsContainer>
       </InfoContainer>
 
       <FooterContainer>
