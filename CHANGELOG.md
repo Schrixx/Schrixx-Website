@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.0](https://github.com/Schrixx/Schrixx-Website/compare/v0.2.0...v0.3.0) (2023-02-16)
+
+
+### Features
+
+* add "about me" page ([6e6b490](https://github.com/Schrixx/Schrixx-Website/commit/6e6b490a33475814fed8353d1e6fbd71473fd9d3))
+* add icons ([e090bf6](https://github.com/Schrixx/Schrixx-Website/commit/e090bf636b4c6be4b877de5e1899b09d7fe5022f))
+* add portfolio page ([21681f8](https://github.com/Schrixx/Schrixx-Website/commit/21681f82f966cfb7ea51b1fc36d71e5868cccaf2))
+* add profile picture ([244627d](https://github.com/Schrixx/Schrixx-Website/commit/244627d48b640e96de3b79cfd319472bccb39115))
+* add two section to home page ([b0d8cbc](https://github.com/Schrixx/Schrixx-Website/commit/b0d8cbcdfa87e71e64443489c4d92da5c98a374c))
+
+
+### Performance Improvements
+
+* change import to include only necessary icons ([5a52425](https://github.com/Schrixx/Schrixx-Website/commit/5a524250076e5bb47fa10e3109ae7d95eacd13c3))
+
 ## [0.2.0](https://github.com/Schrixx/Schrixx-Website/compare/v0.1.0...v0.2.0) (2023-02-03)
 
 
