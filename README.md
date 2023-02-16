@@ -1,2 +1,2 @@
 # Schrixx-Website
-Front-end web-app made using ReactJS as practice.
+Front-end portfolio web-app made using ReactJS.
