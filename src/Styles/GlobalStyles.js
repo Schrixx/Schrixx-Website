@@ -5,19 +5,19 @@ export const GlobalStyled = createGlobalStyle`
     body {
         box-sizing: border-box;
         font-family: "Playfair Display", serif;
-        font-weight: 600;
+        font-weight: 500;
         margin: 0;
         padding: 0;
-        background: -webkit-gradient(320deg, 0% 0%, 0% 100%, from(#daded4), to(#a3bcb6));
-        background: -webkit-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
-        background: -ms-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
-        background: -o-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
-        background: linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
-        background: -moz-linear-gradient(320deg, #daded4 0%, #a3bcb6 100%);
+        background-color: #daded4;
     }
 
     html {
         height: 100%;
+    }
+
+    // Changes background color of buttons on the page when active
+    .active {
+        background-color: #3b3b3b;
     }
 
 `;
