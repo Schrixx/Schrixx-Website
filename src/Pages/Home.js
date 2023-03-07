@@ -12,7 +12,7 @@ import {
   Separator,
   LinkedInIcon,
   SocialWrapper,
-} from "../Styles/HomeStyled";
+} from "../Styles/Home/HomeStyled";
 import { FooterContainer } from "../Styles/PortfolioStyled";
 import {
   SkillsContainer,
@@ -20,24 +20,23 @@ import {
   IconContainer,
   IconWrapper,
   Tooltip,
-} from "../Styles/SkillsStyled";
+} from "../Styles/Home/SkillsStyled";
 
 //Icons
 import ReactIcon from "../Images/Icons/ReactIcon";
 import StyledComponentsIcon from "../Images/Icons/StyledComponentsIcon";
 import JavascriptIcon from "../Images/Icons/JavascriptIcon";
 
-export default function Home() {
+export default function Home({ themeHandler }) {
   return (
     <>
-      <Navbar />
-
+      <Navbar themeHandler={themeHandler} />
       <InfoContainer>
         <FrontEndContainer>
-          <p style={{ fontSize: "20px", maxWidth: "46ch", color: "#1c1c1c" }}>
+          <p style={{ fontSize: "20px", maxWidth: "46ch" }}>
             Hello, I'm Moses. Based in Tucson, Arizona 🌵.
           </p>
-          <p style={{ fontSize: "36px", color: "#1c1c1c" }}>
+          <p style={{ fontSize: "36px" }}>
             As a{" "}
             <span style={{ fontSize: "40px", color: "#71bbd1" }}>
               Front-End Developer
@@ -45,7 +44,7 @@ export default function Home() {
             {", "}I do my best to create responsive, user-friendly experiences
             while maintaining a visually pleasing aesthetic.
           </p>
-          <p style={{ marginBottom: "0", maxWidth: "56ch", color: "#1c1c1c" }}>
+          <p style={{ marginBottom: "0", maxWidth: "56ch" }}>
             I'm always willing to take user criticism and feedback in order to
             improve myself and my work.
           </p>

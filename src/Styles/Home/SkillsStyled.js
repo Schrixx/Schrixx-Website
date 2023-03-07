@@ -8,21 +8,21 @@ export const SkillsContainer = styled.section`
   padding: 0;
   width: 30vw;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.backgroundColor};
   box-shadow: 8px 10px 10px #10232a;
 `;
 
 export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.backgroundColor};
   border-bottom: 2px solid #294f5d;
   border-radius: 15px 15px 0 0;
 
   width: 100%;
 
   h1 {
-    color: #1c1c1c;
+    color: ${({ theme }) => theme.textColor};
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -52,8 +52,8 @@ export const IconWrapper = styled.div`
 export const Tooltip = styled.span`
   visibility: hidden;
   width: 120px;
-  background-color: #1c1c1c;
-  color: #daded4;
+  background-color: ${({ theme }) => theme.textColor};
+  color: ${({ theme }) => theme.backgroundColor};
   text-align: center;
   border-radius: 5px;
   position: absolute;
@@ -73,6 +73,7 @@ export const Tooltip = styled.span`
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #1c1c1c transparent transparent transparent;
+    border-color: ${({ theme }) => theme.textColor} transparent transparent
+      transparent;
   }
 `;
