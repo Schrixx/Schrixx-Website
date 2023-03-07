@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 export const NavWrapper = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 0;
   margin: 0;
   background-color: #1c1c1c;
@@ -17,6 +17,7 @@ export const NavWrapper = styled.nav`
     list-style: none;
     margin-top: 1.3rem;
     margin-bottom: 1.3rem;
+    padding-left: 0;
   }
 `;
 
@@ -24,23 +25,24 @@ export const Bars = styled(FaBars)`
   cursor: pointer;
   transform: scale(1.2);
   color: #daded4;
+  margin: 1.5rem;
+  margin-right: 0;
+  margin-bottom: 0;
 
   &:hover {
-    color: #fff;
+    color: #294f5d;
   }
 `;
 
-export const BarsBackground = styled.div`
-  position: absolute;
-  left: 16px;
-  top: 18px;
-  padding: 5px 5px 2px 5px;
-  border-radius: 10px;
+// export const BarsBackground = styled.div`
+//   margin: 1.3rem;
+//   margin-right: 0;
+//   height: 19.21px;
 
-  &:hover {
-    background-color: #454545;
-  }
-`;
+//   &:hover {
+//     background-color: #454545;
+//   }
+// `;
 
 export const Close = styled(IoClose)`
   position: absolute;
@@ -59,7 +61,6 @@ export const NavbarNavLink = styled(Link)`
   text-decoration: none;
   color: #daded4;
   font-size: 16px;
-  /* padding: 8px 8px; */
   padding: 1.3rem 1rem 1.3rem;
   transition: 850ms;
 
@@ -121,5 +122,33 @@ export const SidebarWrapper = styled.nav`
     span {
       margin-left: 16px;
     }
+  }
+`;
+
+export const ThemeSwitch = styled.div`
+  display: flex;
+  justify-content: ${({ theme }) => theme.flex};
+  /* justify-content: flex-end; */
+  width: 2rem;
+  height: 1rem;
+  margin: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 0;
+  background-color: ${({ theme }) => theme.switchColor};
+  border-radius: 20px;
+  transition: background-color 0.5s;
+`;
+
+export const Circle = styled.button`
+  background-color: #3b3b3b;
+  border: 0;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  transform: scale(1.2);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #4b4b4b;
   }
 `;

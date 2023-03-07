@@ -11,10 +11,11 @@ import {
   SidebarNavLink,
   NavbarNavLink,
   SidebarWrapper,
-  BarsBackground,
+  ThemeSwitch,
+  Circle,
 } from "../Styles/NavbarStyled";
 
-export default function Navbar() {
+export default function Navbar({ themeHandler }) {
   const [sidebar, setSidebar] = useState(false);
 
   const manageSidebar = () => setSidebar(!sidebar);
@@ -22,9 +23,7 @@ export default function Navbar() {
   return (
     <>
       <NavWrapper>
-        <BarsBackground>
-          <Bars onClick={manageSidebar} />
-        </BarsBackground>
+        <Bars onClick={manageSidebar} />
         <ul>
           {NavData.map((item, index) => {
             return (
@@ -36,7 +35,11 @@ export default function Navbar() {
             );
           })}
         </ul>
+        <ThemeSwitch>
+          <Circle onClick={themeHandler}></Circle>
+        </ThemeSwitch>
       </NavWrapper>
+
       <IconContext.Provider value={{ color: "undefined" }}>
         <SidebarWrapper variant={sidebar ? false : true}>
           <Close onClick={manageSidebar} />

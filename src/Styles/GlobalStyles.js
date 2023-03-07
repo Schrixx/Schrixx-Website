@@ -8,7 +8,7 @@ export const GlobalStyled = createGlobalStyle`
         font-weight: 500;
         margin: 0;
         padding: 0;
-        background-color: #daded4;
+        background-color: ${({ theme }) => theme.pageBackgroundColor};
     }
 
     html {
