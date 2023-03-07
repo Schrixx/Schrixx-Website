@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { GrLinkedin } from "react-icons/gr";
 
-import me from "../Images/Me/ryooo.jpg";
+import me from "../../Images/Me/ryooo.jpg";
 
 export const InfoContainer = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const FrontEndContainer = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.backgroundColor};
   border-radius: 15px;
   padding: 1rem;
   padding-left: 1rem;
@@ -23,6 +23,7 @@ export const FrontEndContainer = styled.div`
   box-shadow: 10px 10px 10px #10232a;
 
   p {
+    color: ${({ theme }) => theme.textColor};
     margin: 0;
     margin-bottom: 0.5rem;
     max-width: 25ch;
@@ -44,7 +45,7 @@ export const MeImg = styled.div`
 `;
 
 export const SocialWrapper = styled.a`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.backgroundColor};
   padding: 0;
   margin: 0;
   height: 17px;

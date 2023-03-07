@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../Styles/IconsStyled.css";
+import "../../Styles/Home/IconsStyled.css";
 
 
 function JavascriptIcon() {
